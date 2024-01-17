@@ -45,14 +45,15 @@ p.desc {
 */
 
 body {
-
+    padding: 2em;
 }
 .content {
-
+    padding: 1em;
 }
 
 p.date {
-
+    text-align: left;
+    margin: 0;
 }
 
 h3 {
@@ -60,5 +61,5 @@ h3 {
 }
 
 p.desc {
-
+    margin-bottom: 0;
 }
