@@ -1,62 +1,78 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:400,700|Seymour+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 html, body {
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 95%;
-    margin: 0 auto;
+body {
+    background: #014BCB;
+    display: grid;
+    grid-template-columns: 10% auto;
+    height: 100vh;
+    color: white;
+    font-family: 'Nunito';
+    grid-gap: .5em;
 }
-h1, p {
+sidebar {
+    background: #1D3154;
+}
+.content {
+    background: #6C22FF;
+    padding: .5em;
+    width: 50%;
+    margin-right: 2em;
+    border-radius: .8em;
+}
+h1 {
+    margin-left: 1em;
     font-size: 1em;
 }
-h1 {
-    margin: 2em 0 -.2em;
-    font-family: 'Seymour One', sans-serif;
-}
-section {
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-gap: 1em;
-    margin-top: 2em;
-}
-.card {
-    background-color: #eeeeee;
-    padding: 1.7em;
-}
-blockquote {
+h3 {
     margin: 0;
+    font-size: .9em;
+    color: #FF69F5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+li {
+    margin-bottom: .5em;
+    font-size: .8em;
 }
 span {
-    width: 70px;
-    height: 70px;
-    display: block;
-    background: gray;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-cite {
-    font-style: normal;
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.4em;
+    float: right;
 }
 
+/*  
+    Your Fixes Below
+    
+    Please keep the same background color
+    and the same sidebar background color.
+    
+*/
 
-
-/* My Fix */
-
-h1, p, cite, blockquote, .container.subheading {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    grid-gap: 2em;    /* Improve the white space */
 }
 
-.card {
-    background: blue;
-    border-radius: 1em;
-    color: white;
+.content {
+    background: #4169E1;  /* Improve the color/contrast */
+    color:white;
+    padding: 1.5em 1.5em ;     /* Improve the white space */
+}
+
+.content h3 {
+    color:white;
+    font-size: 1.5em;
+    font-weight: bold;
+    
 }
 
 h1 {
-    font-size: 2em;
+    margin-left: 0;  /* Improve the alignment */
+    font-size: 2.5em;   /* Improve the visual hierarchy */
+    margin-bottom: 1em;
 }
