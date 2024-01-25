@@ -1,65 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:400,700|Seymour+One&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
-body {
-    height: 100vh;
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+h1, p {
+    font-size: 1em;
+}
+h1 {
+    margin: 2em 0 -.2em;
+    font-family: 'Seymour One', sans-serif;
+}
+section {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    place-items: center;
-    background: lightblue;
-    grid-gap: 2em;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1em;
+    margin-top: 2em;
+}
+.card {
+    background-color: #eeeeee;
+    padding: 1.7em;
+}
+blockquote {
+    margin: 0;
+}
+span {
+    width: 70px;
+    height: 70px;
+    display: block;
+    background: gray;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+cite {
+    font-style: normal;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.4em;
+}
+
+
+
+/* My Fix */
+
+h1, p, cite, blockquote, .container.subheading {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
-    background: white;
-}
-span {
-    height: 100px;
-    display: block;
-    width: 100%;
-    background: #71A6B8;
+    background: blue;
+    border-radius: 1em;
+    color: white;
 }
 
-p.date {
-    text-align: center;
-    font-size: .7em;
-    text-transform: uppercase;
-}
-h3 {
-    margin: 0;
-}
-p.desc {
-    font-size: .9em;
-}
-
-/* 
-   Use the following properties
-   to fix the alignment and white
-   space issues on the rulesets
-   below this comment.
-   
-   margin, padding, text-align
-   
-*/
-
-body {
-    padding: 2em;
-}
-.content {
-    padding: 1.5em;
-}
-
-p.date {
-    text-align: left;
-    margin-bottom: 0;
-}
-
-h3 {
-
-}
-
-p.desc {
-    
+h1 {
+    font-size: 2em;
 }
